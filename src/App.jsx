@@ -1,6 +1,10 @@
 import { Box, Toolbar, Typography, Button, AppBar, Card, Paper, CardContent } from '@mui/material'
 function App() {
 
+  function redirectstore(){
+    location.href='https://mawaos.github.io/walestore';
+  }
+
   return (
     <>
         <AppBar position="static" color="primary">
@@ -100,7 +104,7 @@ function App() {
             <Card sx={{ backgroundColor: 'primary.main', }}>
             <CardContent>
               <h1 style={{color: 'white'}}>Tienda de regalos de walee:</h1>
-              <Button color="inherit" variant='contained' href="regalo" sx={{ color: 'secondary.main'}}>Ir a la tienda de regalos</Button>
+              <Button color="inherit" variant='contained' onClick={redirectstore} sx={{ color: 'secondary.main'}}>Ir a la tienda de regalos</Button>
             </CardContent>
           </Card>    
             <Typography variant='h4' marginTop={3}>Recuerda que...</Typography>
